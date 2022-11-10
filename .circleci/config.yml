@@ -21,7 +21,6 @@ jobs:
     docker:
       - image: aquasec/tfsec:v1.28
     steps:
-      - run tfsec checks
       - run:
           name: "Run tfsec"
           command: "tfsec ."
